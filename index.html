@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahnavi</title>
+    <link rel="icon" href="favicon.jpg" style="width:100px;height:100px;">
+  <!-- for swiper -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<!-- for icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          /* background-color:blanchedalmond; */
+          /* background: white; */
+          background: linear-gradient(25deg,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+          backdrop-filter:blur(2rem);
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          font-style: italic;
+          font-weight: 700;
+          color: #060000;
+          display: block;
+          transition: 0.3s;
+        }
+        .sidebar a:hover {
+          color:darkblue;
+        }
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          /* background-color:blanchedalmond; */
+          background: linear-gradient(25deg,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+          backdrop-filter:blur(2rem);
+          color:black;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 10px;
+        } 
+        .openbtn:hover {
+          background-color:darkblue;
+        }
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+        </style>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is main page -->
+    <div id="intro">
+        <!-- this is for navbar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#cerificates">CERTIFICATIONS</a>
+            <a href="#profiles">PROFILES</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#achievements">ACHIEVEMENTS</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+          <!-- this is for about and image -->
+          <div class="first">
+                  <div class="about container">
+                    <h1>I'm Jahnavi <br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A&nbsp;&nbsp; WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A&nbsp;&nbsp; WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A&nbsp;&nbsp; WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                    <h1>I'm Jahnavi<br>&nbsp;&nbsp;A &nbsp;&nbsp;WEB <br> DEVELOPER</h1> 
+                  </div>
+        </div>
+    </div>
+    <!-- for resume -->
+        <div class="for-buttons row" style="display:flex; ">
+          <div class="res-button">
+            <a href="#" class="btn btn-primary">
+               MY RESUME
+            </a>
+          </div>
+        </div>
+    <!-- this is for skills -->
+    <div id="skills">
+      <h2>MY SKILLS</h2>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-12">
+          <div class="info-skill" >
+            <h3>ABOUT ME</h3>
+            I am a hard working Btech undergraduate in the field of computer science,looking to leverage experience in building responsive and scalable websites.Iam a versatile student who is always sincere with my work.
+          </div>
+            
+        </div>
+        <div class="skill-img col-lg-6 col-sm-12 col-md-12">
+          <img src="c1.png" alt="" class="spinner">
+          <img src="node1.png" alt="" class="spinner">
+          <img src="html1.png" alt="" class="spinner">
+          <img src="jquery1.png" alt="" class="spinner">
+          <img src="javascript1.png" alt="" class="spinner">
+           <img src="cp1.png" alt=""  class="spinner">
+           <img src="css1.png" alt="" class="spinner" >
+           <img src="bootstrap1.png" alt="" class="spinner">
+        </div>
+      </div>  
+    </div>
+    <!-- this is for certificates -->
+         <div id="cerificates">
+      <h2>MY CERTIFICATIONS</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="sl.png" />
+            <h3>PYTHON</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="ln2.png" />
+            <h3>JQUERY</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="gl.png" />
+            <h3>PYTHON FOR ML</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="hk1.png" />
+            <h3>PROBLEM SOLVING</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="ln1.png" />
+            <h3>PYTHON</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="hk2.png" />
+            <h3>CSS</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="cs.png" />
+            <h3>HTML</h3>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+    <!-- this is for profiles -->
+    <div id="profiles">
+      <h2>PROFILES</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-body">
+              <h2>CODECHEF</h2>
+                   <img class="profile-image"src="codechef.png" alt="" style="align-items:center;">
+                   <h3>problems solved:200</h3>
+                   <h3>Highest Rating:1572</h3>
+                   <h3>languages used:<br>c++</h3>
+                 <a class="btn btn-primary rounded-pill" href="https://www.codechef.com/users/jahnavi0405" role="button">view my profile</a>
+            </div>
+          </div>
+        <div class="carousel-item">
+          <div class="card-body">
+            <h2>HACKEREARTH</h2>
+                  <img class="profile-image"src="he.jfif" alt="" style="border-radius:105px;">
+                  <h3>points:310</h3>
+                  <h3>languages used:c,c++,<br>java,python </h3>
+                <a class="btn btn-primary rounded-pill" href="https://www.hackerearth.com/@pothala5" role="button">view my profile</a>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-body">
+            <h2>HACKERRANK</h2>
+                 <img class="profile-image"src="HackerRank.png" alt="" style="border-radius:250px;">
+                 <h3>languages used:c,c++<br>python </h3>
+                 <h3>Total Hackos: 1105</h3>
+                <a class="btn btn-primary rounded-pill" href="https://www.hackerrank.com/jahnavipothala15" role="button">view my profile</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-body">
+            <h2>LEETCODE</h2>
+                  <img class="profile-image"src="LeetCode.png" alt="">
+                  <h3>problems </br>solved:100</h3>
+                  <h3>languages used:c++,SQl</h3>
+                  <h3>Highest Rating:1455</h3>
+                <a class="btn btn-primary rounded-pill" href="https://leetcode.com/Pothala_Jahnavi/" role="button">view my profile</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-body">
+            <h2>CODEFORCES</h2>
+                 <img class="profile-image"src="cf.jpg" alt="" style="border-radius:100%; width:50%; height:40%;">
+                 <h3>problems solved:25</h3>
+                 <h3>languages used:c++</h3>
+                 <h3>Highest Rating:1043</h3>
+                <a class="btn btn-primary rounded-pill" href="https://codeforces.com/profile/POTHALA_JAHNAVI" role="button">view my profile</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- this is for projects -->
+    <div id="projects">
+     <h2>PROJECTS</h2>
+       <div class="all-items">
+        <!-- first -->
+         <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="weather.jpg" alt="" style="height:400px;width: 500px;">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title" style="color: darkblue;">WEATHER APP</h2>
+            <p class="project-desc">This application helps to know the
+               weather of any place.It is built with node js,express js using 
+               ejs as template engine.Used css for styling and weather api for
+                extracting the weather report.</p>
+            <div class="buttons">
+              <a href="https://a-weather-ap.herokuapp.com/" class="btn btn-primary rounded-pill" role="button">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+       <!-- second -->
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="target.jpg" alt="" style="height:400px;width: 500px;">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title" style="color:darkblue;">TARGET LIST</h2>
+            <p class="project-desc">This is a CRUD application to add and update 
+              targets of the day.It is built with node js,express js using 
+              ejs as template engine.Used css for styling and mongoose for storing the data.</p>
+            <div class="buttons">
+              <a href="" class="btn btn-primary rounded-pill" role="button">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <!-- third -->
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="qr.jpg" alt="" style="height:400px;width: 500px;">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title" style="color:darkblue;">QR Code Generator</h2>
+            <p class="project-desc">This ap is used to generate qr code for any specific text or url.It is built using express</p>
+            <div class="buttons">
+              <a href="https://qr-code-g.herokuapp.com/" class="btn btn-primary rounded-pill" role="button">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+   <!-- this is for achievements -->
+     <div id="achievements">
+      <h2>ACHIEVEMENTS</h2>
+       <div class="container">
+        <div class="row">
+          <div class="col col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+              <img src="cdsa.jpg" alt="">
+              <div class="card-text">
+                 <h3>
+                 Codechef Certified <br> Data Structures and Algorithms</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+
+
+
+    </div>
+    <!-- this is for contacts -->
+    <div id="contact">
+      <footer >
+        <ul class="social-icons">
+          <li><a href="https://www.linkedin.com/in/pothala-jahnavi-8b2a4622a"><ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+          <li><a href="https://github.com/PothalaJahnavi"><ion-icon name="logo-github"></ion-icon>
+          </a></li>
+          <li><a href=""><ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+          <li><a href="jahnavipothala15@gmail.com"><ion-icon name="mail-unread-outline"></ion-icon>
+          </a></li>
+        </ul>
+        <p>@Copyrights|All Rights Reserved|❤️Jahnavi</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+        </script>
+
+</body>
+</html>
