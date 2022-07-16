@@ -59,7 +59,7 @@ body,html{
 
     color:white;
     text-transform: capitalize;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     align-items: center;
     justify-content: center;
@@ -254,7 +254,7 @@ for skills */
  @media screen and (max-width:758px) {
         .card-body{
            height: 550px;
-           width: 300px;
+           width: 290px;
         }
        }
      p{
@@ -332,7 +332,7 @@ for skills */
       margin-top:-190px;
      }
       #projects .item .img{
-          width:220px;
+          width:270px;
       }
      #projects .item:nth-child(even){
       flex-direction: column;
