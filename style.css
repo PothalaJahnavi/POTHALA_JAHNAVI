@@ -251,9 +251,10 @@ for skills */
         align-items: center;
         justify-content: center;
       }
- @media screen and (min-width: 595px) {
+ @media screen and (max-width:758px) {
         .card-body{
-         margin-right:20%;
+           height: 550px;
+           width: 300px;
         }
        }
      p{
@@ -331,7 +332,7 @@ for skills */
       margin-top:-190px;
      }
       #projects .item .img{
-          width:150px;
+          width:220px;
       }
      #projects .item:nth-child(even){
       flex-direction: column;
